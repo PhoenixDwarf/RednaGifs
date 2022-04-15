@@ -24,7 +24,7 @@ body{
     align-items: center;
     padding-bottom: 20px;
 }
-#gifs-history-sugerencias a{
+#gifs-history-sugerencias button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body{
     text-decoration: none;
     border-radius: 4px;
 }
-#gifs-history-sugerencias a:hover{
+#gifs-history-sugerencias button:hover{
     background-color: #71a2da;
 }
 /*  Gifs section - Right side */
@@ -52,6 +52,15 @@ body{
 }
 #gifs-container-search{
     width: 70%;
+}
+#gifs-container-search-div{
+    display:flex;
+}
+#gifs-container-search-div-submitInput{
+    width: 40%;
+}
+#gifs-container-search-div-submitInput:hover{
+    background-color: #71a2da;
 }
 #gifs-container-search input{
     width: 96%;

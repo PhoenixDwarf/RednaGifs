@@ -28,50 +28,53 @@
                 <h1>Sugerencias</h1>
                 <hr class="hr">
                 <div id="gifs-history-sugerencias">
-                    <a href=""><p>Busqueda 1</p></a>
-                    <a href="">Busqueda 2</a>
-                    <a href="">Busqueda 3</a>
-                    <a href="">Busqueda 4</a>
-                    <a href="">Busqueda 5</a>
-                    <a href="">Busqueda 6</a>
-                    <a href="">Busqueda 7</a>
-                    <a href="">Busqueda 8</a>
-                    <a href="">Busqueda 9</a>
-                    <a href="">Busqueda 10</a>
+                    <button onclick="sugerenciasFunction('Naruto')">Naruto</button>
+                    <button onclick="sugerenciasFunction('Dragon Ball Z')">Dragon Ball Z</button>
+                    <button onclick="sugerenciasFunction('Cowboy Bebop')">Cowboy Bebop</button>
+                    <button onclick="sugerenciasFunction('Fullmetal Alchemist')">Fullmetal Alchemist</button>
+                    <button onclick="sugerenciasFunction('Evangelion')">Evangelion</button>
+                    <button onclick="sugerenciasFunction('Tatami Galaxy')">Tatami Galaxy</button>
+                    <button onclick="sugerenciasFunction('Aku No Hana')">Aku No Hana</button>
+                    <button onclick="sugerenciasFunction('Sailor Moon')">Sailor Moon</button>
+                    <button onclick="sugerenciasFunction('Hunter X Hunter')">Hunter X Hunter</button>
+                    <button onclick="sugerenciasFunction('Mononoke')">Mononoke</button>
                 </div>
             </div>
 
             <div id="gifs-container">
                 <div id="gifs-container-search">
                     <h2>Buscar:</h2>
-                    <input type="text" placeholder="Buscar gifs...">
+                    <div id="gifs-container-search-div">
+                        <input type="search" id="gifs-container-search-div-searchInput" placeholder="Ej: Francia">
+                        <button type="submit" value="search" id="gifs-container-search-div-submitInput">Buscar</button>
+                    </div>
                 </div>
                 <br>
                 <hr class="hr">
                 <div id="gifs-container-cards">
                     <article>
-                        <img src="" alt="">
-                        <p>Dragon Ball Super GIF by TOEI Animation UK</p>
+                        <img src="" alt="" id="url0">
+                        <p id="title0"></p>
                     </article>
                     <article>
-                        <img src="" alt="">
-                        <p>Dragon Ball Super GIF by TOEI Animation UK</p>
+                        <img src="" alt="" id="url1">
+                        <p id="title1"></p>
                     </article>
                     <article>
-                        <img src="" alt="">
-                        <p>Dragon Ball Super GIF by TOEI Animation UK</p>
+                        <img src="" alt="" id="url2">
+                        <p id="title2"></p>
                     </article>
                     <article>
-                        <img src="" alt="">
-                        <p>Dragon Ball Super GIF by TOEI Animation UK</p>
+                        <img src="" alt="" id="url3">
+                        <p id="title3"></p>
                     </article>
                     <article>
-                        <img src="" alt="">
-                        <p>Dragon Ball Super GIF by TOEI Animation UK</p>
+                        <img src="" alt="" id="url4">
+                        <p id="title4"></p>
                     </article>
                     <article>
-                        <img src="" alt="">
-                        <p>Dragon Ball Super GIF by TOEI Animation UK</p>
+                        <img src="" alt="" id="url5">
+                        <p id="title5"></p>
                     </article>
 
                 </div>
@@ -94,5 +97,8 @@
     </footer>
 
 </body>
+<script src="./js/giphy.js"></script>
+<script src="./js/index.js"></script>
+
 
 </html>
