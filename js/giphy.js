@@ -9,7 +9,12 @@ class giphy{
         var xhr = new XMLHttpRequest();
 
         xhr.open("GET",this.endpoint+"/search?api_key="+this.api_key+"&q="+this.keyword+"&limit=6");
+
+        //fetch
+
         xhr.responseType = "json";
+
+        //Anonimous function 
 
         xhr.onload = function(){
 
@@ -20,6 +25,8 @@ class giphy{
                 arregloGif.push (this.response.data[i].images.downsized_medium.url);
                 arregloTitle.push (this.response.data[i].title);
             }
+
+            // callbacks - study
             callback(arregloGif,arregloTitle);
         }
         xhr.send();

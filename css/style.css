@@ -5,6 +5,11 @@ body{
 .hr{
     width: 80%;
 }
+/*  Serch for this metology  */
+#contenedor{
+    max-width: 1480px;
+    margin: 0 auto;
+}
 /*  Gifs section  */
 #gifs{
     display: flex;
