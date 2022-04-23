@@ -1,102 +1,118 @@
 /* Global */
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-.hr{
-    width: 80%;
+.hr {
+  width: 80%;
 }
 /*  Serch for this metology  */
-#contenedor{
-    max-width: 1480px;
-    margin: 0 auto;
+#contenedor {
+  max-width: 1480px;
+  margin: 0 auto;
 }
 /*  Gifs section  */
-#gifs{
-    display: flex;
+#gifs {
+  display: flex;
 }
 /*  Gifs section - left side */
-#gifs-history{
-    width: 200px;
-    background-color: #5a5a5a;
-    text-align: center;
+#gifs-history {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  background-color: #5a5a5a;
+  text-align: center;
 }
-#gifs-history h1{ 
-    color: #ffffff;
+#gifs-history h1 {
+  padding: 0 12px;
+  color: #ffffff;
 }
-#gifs-history-sugerencias{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
+#gifs-history-sugerencias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
-#gifs-history-sugerencias button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    background-color: #d3c8c8;
-    width: 80%;
-    height: 30px;
-    text-decoration: none;
-    border-radius: 4px;
+#gifs-history-sugerencias button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  margin-top: 0.5rem;
+  background-color: #d3c8c8;
+  width: 80%;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s;
 }
-#gifs-history-sugerencias button:hover{
-    background-color: #71a2da;
+#gifs-history-sugerencias button:hover {
+  background-color: #71a2da;
 }
 /*  Gifs section - Right side */
-#gifs-container{
-    width: 100%;
+#gifs-container {
+  width: 100%;
 }
-#gifs-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+#gifs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#gifs-container-search{
-    width: 70%;
+#gifs-container-search {
+  width: 70%;
 }
-#gifs-container-search-div{
-    display:flex;
+#gifs-container-search-div {
+  display: flex;
 }
-#gifs-container-search-div-submitInput{
-    width: 40%;
+#gifs-container-search-div-submitInput {
+  width: 40%;
 }
-#gifs-container-search-div-submitInput:hover{
-    background-color: #71a2da;
+#gifs-container-search-div-submitInput:hover {
+  background-color: #71a2da;
 }
-#gifs-container-search input{
-    width: 96%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    padding-left: 15px;
+#gifs-container-search input {
+  width: 96%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 15px;
 }
-#gifs-container-search input:focus{
-    box-shadow: #96bae4 0px 0px 0px 3px;
-    outline: none;
+#gifs-container-search input:focus {
+  box-shadow: #96bae4 0px 0px 0px 3px;
+  outline: none;
 }
-#gifs-container-cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#gifs-container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content;
+  /*para ser mas resposivo las cartas segun el mayor el contenido*/
 }
-#gifs-container-cards article{
-    background-color: #e6ecf3;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#gifs-container-cards article {
+  display: flex;
+  width: 25vw;
+  flex-flow: column;
+  align-items: center;
+  background-color: #c3d3e7;
+  box-shadow: 5px 5px 5px black;
+  transition: box-shadow 0.5s;
+  /*esta propiedad afecta el hover*/
+  border-radius: 0 0 10% 10%;
+  /*
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  */
+  margin: 12px;
 }
-#gifs-container-cards article img{
-    width: 400px;
-    height: 200px;
+#gifs-container-cards article:hover {
+  box-shadow: 20px 20px 30px black;
+  /*sombra del boton*/
 }
-#gifs-container-cards article p{
-    padding-left: 15px;
+#gifs-container-cards article img {
+  width: 95%;
+  padding: 10px;
+  /*Es poner estos datos por medio de porsentajes para que sea esponsive*/
 }
-
-
-
-
+#gifs-container-cards article p {
+  padding-left: 15px;
+}
