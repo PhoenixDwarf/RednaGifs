@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d542902b05.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -14,17 +15,21 @@
 
 <body>
 
-    <header>
-        <nav>
+    <header class="encabezado">
+        <!--<nav>-->
             <!-- Here goes the nav bar -->
-        </nav>
+            
+            <h1>RednaGifs</h1>
+            <i class="fa-solid fa-bars"></i>
+
+        <!--</nav>-->
     </header>
     
     <main id="contenedor">
 
         <section id="gifs">
             
-            <div id="gifs-history">
+            <div id="gifs-history"> <!-- Revisar semantica -->
                 <h1>Sugerencias</h1>
                 <hr class="hr">
                 <div id="gifs-history-sugerencias">
@@ -41,7 +46,7 @@
                 </div>
             </div>
 
-            <div id="gifs-container">
+            <div id="gifs-container">  <!-- Revisar semantica -->
                 <div id="gifs-container-search">
                     <h2>Buscar:</h2>
                     <div id="gifs-container-search-div">
@@ -82,18 +87,165 @@
 
         </section>
             
-        <section>
+        <section id="populares">
             <!-- Here goes the "most popular" section -->
+
+            <div id="populares-trama">
+
+                <article>
+
+                    <div class="populares-trama-cuadro1">
+                        
+                        <h3>Popular 1</h3>
+                        <div class="populares-trama-cuadro1-cuadro2">
+
+                            <img class="populares-trama-cuadro1-cuadro2-pic" src="assets/img/poke.gif" alt=""> <!-- Revisar propiedad alt -->
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article>
+
+                    <div class="populares-trama-cuadro1">
+                        
+                        <h3>Popular 2</h3>
+                        <div class="populares-trama-cuadro1-cuadro2">
+
+                            <img class="populares-trama-cuadro1-cuadro2-pic" src="assets/img/load.gif" alt="">
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article>
+
+                    <div class="populares-trama-cuadro1">
+
+                        <h3>Popular 3</h3>
+                        <div class="populares-trama-cuadro1-cuadro2">
+
+                            <img class="populares-trama-cuadro1-cuadro2-pic" src="assets/img/aven.gif" alt="">
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article>
+
+                    <div class="populares-trama-cuadro1">
+
+                        <h3>Popular 4</h3>
+                        <div class="populares-trama-cuadro1-cuadro2">
+
+                            <img class="populares-trama-cuadro1-cuadro2-pic" src="assets/img/noplease.gif" alt="">
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!--Comments-->
+
+            <div id="populares-comentarios">
+
+                <article>
+
+                    <div class="populares-comentarios-usuario">
+
+                        <div class="populares-comentarios-usuario-icon">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <h4>Usuario 1</h4>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam deserunt laudantium laborum numquam voluptatem est minima quasi veniam id illum?</p>
+
+                    </div>
+
+                </article>
+
+                <article>
+
+                    <div class="populares-comentarios-usuario">
+
+                        <div class="populares-comentarios-usuario-icon">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <h4>Usuario 2</h4>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cum repellat dolor, voluptates magni repudiandae explicabo necessitatibus corporis quibusdam qui.</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
 
-        <section>
+        <br> <!-- Eliminar BRS y usar margenes -->
+        <h2>Patrocinadores</h2>
+        <section id="empresas">
             <!-- Here goes the final section -->
+
+            
+            <article class="empresas-picture">
+
+                <p>
+                    <img class="empresas-picture-logo" src="assets/img/unreal.png" alt="Logo">
+                    <br>
+                    <h3>Unreal Engine</h3>
+                </p>
+
+            </article>
+
+            <article class="empresas-picture">
+
+                <p>
+                    <img class="empresas-picture-logo" src="assets/img/major.png" alt="Logo">
+                    <br>
+                    <h3>Major Tom</h3>
+                </p>
+
+            </article>
+
+            <article class="empresas-picture">
+
+                <p>
+                    <img class="empresas-picture-logo" src="assets/img/cubicle.jpg" alt="Logo">
+                    <br>
+                    <h3>Cubicle Ninjas</h3>
+                </p>
+
+            </article>
+
         </section>
 
     </main>
 
-    <footer>
+    <footer class="piedepagina">
         <!-- Here goes the footer -->
+        
+        <div class="piedepagina-izq">
+            <h4 class="piedepagina-contacto">comunicate con nosotros</h4>
+            <div class="piedepagina-copyright">
+                <h4>Copyright</h4>
+                <i class="fa-solid fa-copyright"></i>
+            </div>
+        </div>
+        <div class="piedepagina-social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+
     </footer>
 
 </body>

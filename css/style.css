@@ -5,6 +5,21 @@ body{
 .hr{
     width: 80%;
 }
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFF00;
+}
+.encabezado i{
+    font-size: 40px;
+    margin: 20px;
+}
+
+h1{
+    justify-content: center;
+}
+
 /*  Serch for this metology  */
 #contenedor{
     max-width: 1480px;
@@ -97,6 +112,115 @@ body{
     padding-left: 15px;
 }
 
+/*Populares Section*/
 
+#populares{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+#populares-trama{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+    
+}
+
+.populares-trama-cuadro1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0.1em;
+    border: 1px solid #000;
+    background: #3498DB;
+    padding: 1em;
+}
+
+.populares-trama-cuadro1-cuadro2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+.populares-trama-cuadro1-cuadro2-pic{
+    height: 150px;
+    width: 200px;
+}
+
+#populares-comentarios{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.populares-comentarios-usuario{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5em;
+}
+
+.populares-comentarios-usuario-icon{
+    width: 150px;
+    height: 150px;
+}
+
+i{
+   width: fit-content;
+   height: fit-content;
+}
+
+/*Patrocinadores Section*/
+
+#empresas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.empresas-picture{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0.1em;
+    padding: 1em;
+    justify-items: center;
+}
+
+.empresas-picture-logo{
+    width: 250px;
+    height: 250px;
+}
+
+/*Footer*/
+
+.piedepagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.piedepagina-izq{
+    display: flex;
+    align-items: center;
+}
+.piedepagina-contacto{
+    font-size: 25px;
+    margin: 10px;
+}
+.piedepagina-copyright{
+    display: flex;
+    font-size: 25px;
+    margin: 0;
+    align-items: center;
+}
+.piedepagina-copyright i{
+    font-size: 20px;
+    margin: 10px;
+}
+.piedepagina-social{
+    font-size: 50px;
+    margin: 30px;
+}
 
 
