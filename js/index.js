@@ -16,7 +16,7 @@ document.getElementById('gifs-container-search-div-submitInput').addEventListene
             })
     }
 );
-
+popular1 = "pikachu"
 function sugerenciasFunction(valor){
 
     giphy.getUrlAsync(valor,function(gifUrl,gitTitle){
@@ -27,3 +27,11 @@ function sugerenciasFunction(valor){
     })
 
 }
+
+for(let i=0; i<4; i++){
+giphy.getUrlAsync(popular1,function(gifUrl,gitTitle){
+        document.getElementById('populares-trama-cuadro1-porpular1-gif').src = gifUrl[0];
+        document.getElementById(`populares-trama-cuadro1-porpular${i}`).innerHTML = gitTitle[i];
+})
+}
+
